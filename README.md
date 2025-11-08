@@ -26,3 +26,9 @@ Then `./start_session.bash` or `./start_session.bash $file` to start `hx` with `
 ## Usage
 
 You can now send code from helix to the ipython instance started by creating a selection, and using the binding provided to send code directly to ipython and thus Renardo.
+
+## Todo
+
+- Add custom libary for new patterns / logic etc. on top of `renardo`.
+- Build suite of examples.
+- Make music :)
