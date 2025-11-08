@@ -1,0 +1,3 @@
+[keys.normal]
+"A-r" = ":pipe-to .helix/scripts/send_below.bash"
+

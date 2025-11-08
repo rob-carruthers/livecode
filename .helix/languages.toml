@@ -1,0 +1,4 @@
+[[language]]
+name = "python"
+file-types = ["py", "pyi", "muspy"]
+language-servers = []
