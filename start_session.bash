@@ -6,8 +6,12 @@ tmux split-window -b
 tmux select-pane -D
 tmux send-keys "source .venv/bin/activate"
 tmux send-keys Enter
-tmux send-keys "ipython -i startup/startup.py; killall sclang; killall scsynth; exit"
+tmux send-keys "ipython -i startup/startup.py; killall sclang; killall scsynth; pkill -f \"tail -f sclang.log\"; exit"
 tmux send-keys Enter
+tmux split-pane -h
+tmux send-keys "tail -f sclang.log; exit"
+tmux send-keys Enter
+tmux select-pane -L
 tmux select-pane -U
 tmux resize-pane -D 20
 tmux send-keys "source .venv/bin/activate"
