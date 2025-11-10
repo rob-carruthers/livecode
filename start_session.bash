@@ -19,6 +19,6 @@ tmux send-keys Enter
 
 if [ $# -eq 1 ]; then
   tmux send-keys "hx "
-  tmux send-keys "$1"
+  tmux send-keys "$1; pkill -f \"ipython -i startup/startup.py\""
   tmux send-keys Enter
 fi
